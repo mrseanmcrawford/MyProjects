@@ -1,0 +1,157 @@
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    img {
+        filter: grayscale(100%);
+        border: 2px solid red;
+        border-radius: 25px;
+    }
+
+    footer p {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        height: auto;
+        width: auto;
+        text-align: center;
+        padding: 20px;  
+    }
+
+
+    .table1 {
+        background-color: green;
+        color: yellow;
+    }
+
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: teranslate (-50%, -50%);
+        font-size: 20px;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: green;
+        color: Yellow;
+        height: auto;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .navbar a {
+        color: yellow;
+    }
+
+    .navbar:hover {
+        background-color: yellow;
+        color: green;
+    }
+
+    .navbar a:hover{
+        color: green;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+    }
+      
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .column h1 {
+          background-color: green;
+          color: yellow;
+      }
+
+      p:hover {
+          background-color: yellow;
+      }
+
+    img:hover {
+        transform: slide in right;
+      }
+
+    .h12 {
+         color: green;
+
+     }
+
+     .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: white;
+      }
+      
+      .container image { 
+        width: 250px; 
+        height: 250px; 
+    } 
+      
+    .container { 
+        position: relative; 
+        width: 400px; 
+        height: auto; 
+    } 
+      
+    .overlay { 
+        position: absolute; 
+        transition: all 0.3s ease; 
+        opacity: 0; 
+        background-color: #9bcd9b; 
+    } 
+      
+    .container:hover .overlay { 
+        opacity: 1; 
+    } 
+      
+    .overlayFade { 
+        height: 250px; 
+        width: 250px; 
+        top: 0; 
+        left: 75px; 
+        background-color: #9bcd9b; 
+    } 
+
+    .container1 {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+
+
