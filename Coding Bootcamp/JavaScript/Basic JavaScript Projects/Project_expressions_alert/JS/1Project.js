@@ -5,4 +5,4 @@ document.write (A+B)              //Printing both Variables
 var blues = " I have the blues."  // Assingining Variable 
 var blues = blues.fontcolor ("blue") //Assigning color to Variable
 document.write(blues)              //Printing Variable 
-document.write(8+8)                //Writing and prtinting an expression
+document.write(8+8)                //Writing and prtinting an expression 
