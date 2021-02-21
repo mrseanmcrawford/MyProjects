@@ -1,0 +1,1 @@
+window.alert(Math.random() * 10);       //this function returns a random number betwee 0 and 10 in a pop up window
