@@ -11,13 +11,13 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
+function showSlides(n) {                                                //Defining Slideshow function//
+    var i;                                                              //Defining Variable//
+    var slides = document.getElementsByClassName("mySlides");           //Defining Variable//
+    var dots = document.getElementsByClassName("dot");                 //Defining  Variable//
+    if (n > slides.length) {slideIndex = 1}                            // "IF" Property//
     if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
+    for (i = 0; i < slides.length; i++) {                              //"For" Property//
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
