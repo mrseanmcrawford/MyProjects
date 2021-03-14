@@ -82,12 +82,12 @@
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
+/*Webkit*/
 @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
 }
-
+/*keyframes*/
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
