@@ -1,7 +1,7 @@
-var X = 82;
-document.write(X);
+var X = 82;           //Defining Variable//
+document.write(X);     //Defining Function//
 {
-    let X = 33;
-    document.write("<br>" + X);
+    let X = 33;         //Defining Function//
+    document.write("<br>" + X); //Document write method// 
 }
-document.write("<br>" + X);
+document.write("<br>" + X);     
