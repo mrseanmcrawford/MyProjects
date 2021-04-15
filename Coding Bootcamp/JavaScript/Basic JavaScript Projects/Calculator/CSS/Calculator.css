@@ -1,0 +1,21 @@
+/* setting font sizing for HTML*/
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.calculator {
+    border: 1.2px solid darkslategray;
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 505;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
