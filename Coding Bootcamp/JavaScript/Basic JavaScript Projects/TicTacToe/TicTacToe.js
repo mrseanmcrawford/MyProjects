@@ -162,7 +162,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     //This function interacts with the canvas.
     function animateLineDrawing() {
         //This variable creates a loop.
-        const animationLoop = requestAnimationFrame(animateLinedrawing);
+        const animationLoop = requestAnimationFrame(animateLineDrawing);
         //This methos clears content from the last loop iteration. 
         c.clearRect(0,0,608,608)
         //This method starts a new path
@@ -189,7 +189,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         }
         //This condition is similar to the one above.
         //This is necessary for the 6, 4, 2 win condition.
-        if (x1 <= X2 && y1 >= y2) {
+        if (x1 <= X2 && y1 <= y2) {
             if (x < x2) { x += 10; }
             if (y > y2) { y -= 10; }
             if (x >= x2 && y <= y2) { cancelAnimationFrame(animationLoop); }
@@ -207,7 +207,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     //This line disallows clicking while the win sound is playing.
     disableClick();
     //This line plays the win sounds.
-    audio('./media/wingame.mp3');
+    audio('./media/winGame.mp3');
     //This line calls our main animation loop.
     animateLineDrawing();
     //this line waits 1 second, then clears canvas, resets game, and allows clicking again.
@@ -216,12 +216,12 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
 //Thius function resets the gamne in the event of a tie or a win.
 function resetGame() {
     //This for loop iterates through each HTML square element
-    for (let i = 0; 1 < 9; i++) {
+    for (let i = 0; i < 9; i++) {
         //This variable gets the html element of i.
         let square = document.getElementById(String(i))
         //This removes our elements backgroundImage.
         square.style.backgroundImage = ''
     }
     //This resets our array so it is empty and we can start over. 
-    selectedSquares = {};
+    selectedSquares = [];
 }
