@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="./css/onepage.css">
-<meta charset="utf-8">
 
 <!--Heading-->
 <heading> 
     <title>
         Seattle
     </title>
+    <script src="JS/one_page_website.js" defer></script>
+    <link rel="stylesheet" href="./css/onepage.css">
+    <meta charset="utf-8">
+
 </heading>
 <!--End of Heading-->
 
@@ -38,16 +40,68 @@
 </main>
 
 <!--Gallery-->
-<div id="Gallery"></div>
-<sectiom>
-    <p>
-        <b><h1>Gallery</h1></b>
-        <br> Below you can see a few images of the seattle area!
-    </p>
-    <br><img src="https://travel.home.sndimg.com/content/dam/images/travel/fullrights/2018/1/25/1/CI_KENMOREAIR_seattle-plane-tour.jpg.rend.hgtvcom.966.644.suffix/1516917819178.jpeg" alt="Photo of Seattle">
-    <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Aerial_Lake_Union_November_2011.JPG/2880px-Aerial_Lake_Union_November_2011.JPG" alt="Photo of Seattle">
-    <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Aerial_Lake_Union_July_4_2011.JPG/2880px-Aerial_Lake_Union_July_4_2011.JPG" alt="Photo of Seattle" >
-</sectiom>
+
+<!--Images used to open the light box-->
+<div class="table">
+    <div class="row">
+    <div class="column">
+        <img src="images/Seattle1.jpeg" onclick="openModal();currentSlide(1)" class="hover-
+            shadow">
+    </div>
+    <div class="column">
+        <img src="images/Seattle2.jpeg" onclick="openModal();currentSlide(2)" class="hover-
+            shadow">
+    </div>
+    <div class="column">
+        <img src="images/Seattle3.jpeg" onclick="openModal();currentSlide(3)" class="hover-
+            shadow">
+    </div>
+</div>
+
+<!--The Modal/Lightbox-->
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlides">
+            <div class="numbertext"> 1 / 3</div>
+            <img src="images/Seattle1.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/Seattle2.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/Seattle3.jpeg" style="width:100%">
+        </div>
+
+
+<!--Next/Previous controls-->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<!--Caption text-->
+<div class="caption-container">
+    <p id="caption"></p>
+</div>
+
+<!--Thumnail image controls-->
+<div class="column">
+    <img class="demo" src="images/Seattle1.jpeg" onclick="currentSlide(1)" alt="Seattle">
+</div>
+<div class="column">
+    <img class="demo" src="images/Seattle2.jpeg" onclick="currentSlide(2)" alt="Seattle">
+</div>
+<div class="column">
+    <img class="demo" src="images/Seattle3.jpeg" onclick="currentSlide(3)" alt="Seattle">
+        </div>
+    </div>
+</div>
+</div>
+
 <!--End of Gallery-->
 
 <!--Video-->
