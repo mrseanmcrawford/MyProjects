@@ -6,7 +6,7 @@
     <title>
         Seattle
     </title>
-    <script src="JS/one_page_website.js" defer></script>
+    <script src="./JS/one_page_website.js" defer></script>
     <link rel="stylesheet" href="./css/onepage.css">
     <meta charset="utf-8">
 
@@ -15,6 +15,14 @@
 
 <!--Body-->
 <body>
+    <!--Fade in and out effect-->
+    <script>
+        document.body.classList.add('fade-out');
+        window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+})
+ </script>
+ <!--End of Fade in and out effect-->
     <h1>
         <b> DO YOU WANT TO MOVE TO SEATTLE</b>
     </h1>
@@ -31,8 +39,7 @@
 <!--End of Nav-->
 
 <main>
-    <br>
-<p>
+<p style="font-size:1vw;">
     <b>Seattle is such a wonderful and beautiful city!</b>
     <br>So many people are moving here because of that! 
     <br>Take a look around and see if you find anything of interest that may make you want to move here too!
