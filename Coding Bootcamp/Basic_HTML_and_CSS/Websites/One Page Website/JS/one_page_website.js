@@ -1,4 +1,10 @@
-
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("All fields must be filled out!!");
+        return false;
+    }
+}
 
 //Open the Modal
 function openModal() {
@@ -40,4 +46,6 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
 

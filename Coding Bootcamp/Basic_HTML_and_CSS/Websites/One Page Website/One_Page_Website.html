@@ -18,12 +18,9 @@
     <!--Fade in and out effect-->
     <script>
         document.body.classList.add('fade-out');
-        window.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.remove('fade-out');
-})
  </script>
  <!--End of Fade in and out effect-->
-    <h1>
+    <h1 id="H!">
         <b> DO YOU WANT TO MOVE TO SEATTLE</b>
     </h1>
 
@@ -39,7 +36,7 @@
 <!--End of Nav-->
 
 <main>
-<p style="font-size:1vw;">
+<p  id="#Home" style="font-size:1vw;">
     <b>Seattle is such a wonderful and beautiful city!</b>
     <br>So many people are moving here because of that! 
     <br>Take a look around and see if you find anything of interest that may make you want to move here too!
@@ -125,19 +122,22 @@
 <!--End of Video-->
 
 <!--Contact-->
-<div id="Contact"></div>
-<h1>Contact Information</h1>
-<p>Please take a moment to provide us with your contactin information below!</p>
-<form action="" method="post">
-                <br><input class="rsvp" type="text" value="First Name">
-                <br><input class="rsvp" type="text" value="Last Name">
-                <br><input class="rsvp" type="text" value="Email Address">
-                <br><input class="rsvp" type="text" value="Phone Number">
-                <br><div class="form-spacer">
-                <br><input type="submit" value="subtmit">
-                </div>
-                <br><label class="Terms">Terms and Conditions</label>
+<form name="myForm" action="" onsubmit="return validateForm()"
+        method="post">
+            Name: <input type="text" name="fname">
+            <br>
+            Email: <input type="text" name="fname">
+            <br>
+            Phone: <input type="text" name="fname">
+            <br>
+        <input type="submit" value="Submit">
+    </form>
 <!--End of Contact-->
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+});
+</script>
 <!--End of Body-->
 
 <!--Footer-->
