@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head-->   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title> Mr Sean M. Crawford</title>
+        <link rel="stylesheet" type="text/css" href="MrCrawford_Portfolio_website.css">
+    </head>
+    <!--End of Head-->
+
+    <!--Body-->
+    <body>
+        <body class="Background">
+            <!--Navbar-->
+            <div class="Navbar">
+                <a class="active" href="#Home">Home</a>
+                <!--New Section Added-->
+                <a href="#Slideshow">Slideshow</a>
+                <a href="#About">About</a>
+                <a href="#GitHub">GitHub</a>
+                <!--Onclick and ondblclick functions added to open and close the contact form-->
+                <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+            </div>
+
+            <!--Background Video-->
+            <div id="Home">
+                <video autoplay muted loop id="Typing_Video">
+                    <source src="videos/video1.mp4" type="video/mp4">
+                    <!--Display message if video fails to run-->
+                    your browser does not support HTML5 video.
+                </video>
+            </div>
+
+            <!--Video Text-->
+            <div class="Video_Text">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 class="White-text">The Portfolio of <br>
+                     Mr. Sean Crawford</h1>
+                <hr>
+                <strong>
+                    <p class="center">
+                        <q>Everything is design and design is EVERYTHING...... <br>
+                            without design, critical thinking, and deep exploration of ones curiosity and creativity, you have NOTHING worth having</q>
+                        <br>
+                        <br>
+                        <br>
+                        - Sean Crawford
+                        <br>
+                        <br>
+                        Thank you so much for visiting my online Portfolio! 
+                        <br>
+                    </p>
+                </strong>
+            </div>
+
+            <!--Slideshow Section Added-->
+            <div id="Slideshow">
+                <div id="Slideshow_Background">
+                    <div id="Slideshow_Container">
+                        <!-- Slide 1 of 6 -->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="images/contact.jpg" alt="Sean Crawford Photo">
+                                <div class="text">I am avaiable to assist you on your project!</div>
+                        </div>
+                        <!--Slide 2 of 6-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="images/contact.jpg" alt="HTML, CSS, and JS logos">
+                                <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                        </div>
+                        <!--Slide 3 of 6-->
+                        <div class="mySlides fade">
+                                <img class="Slideshow_Images" src="images/contact.jpg" alt="Python logo">
+                                    <div class="text">the popular programing language Python</div>
+                        </div>
+                        <!--4 of 6-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="images/contact.jpg" alt="C# logo">
+                                <div class="text">C#, .Net Framework, ASP.NET, MVC, </div>
+                        </div>
+                        <!--5 of 6-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="images/contact.jpg" alt="SQL logo">
+                                <div class="text">Back end development, databases and SQL.</div>
+                        </div>
+                        <!--6 of 6-->
+                        <div class="mySlides fade">
+                            <img class="Slideshow_Images" src="images/contact.jpg" alt="images">
+                            <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now</a></div>
+                        </div>
+                      <!-- Previous and next buttons-->  
+                      <a class="Previous" onclick="plusslides(-1)">&#10094;</a>
+                      <a class="Next" onclick="plusslides(1)">&#10095;</a>
+                      </div>
+                      <br> <!--Adds a space between the slideshow images and the dots-->
+
+                      <!-- Slideshow dots (these are another way for users to navigate through the slideshow)-->
+                      <div style="text-align: center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        </div>
+                    </div>
+                </div>
+            <!--About Section-->
+            <div class="Row" id="About">
+                <!--Left Column-->
+                <div class="Column_2">
+                    <img src="images/selfie.jpg" alt="Sean photo">
+                </div>
+                <!--Right Column-->
+                <div class="Column_1">
+                    <h3><u>Who is Sean?</u></h3>
+                <p>
+                    <strong>Well Hello!</strong>
+                    <br>
+                    <br>
+                    <br>
+                    Welcome to my Portfolio. My name is Sean Crawford, a proud Seattle Native and tech geek! Looking to change the world through technology and inovation. 
+                    <br>
+                    <br>
+                    Please take a look a round to get to know me better, and when yur all done an d have fallen in love with me please connect with me via the contact form below!!
+                </p>
+                </div>
+            </div>
+
+        <!--GitHub Section-->
+        <div class="Row" id="GitHub">
+            <!--Left Column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p> You can view all of my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="">The Tech Academy GitHub</a></p>
+                </p>
+            </div>
+            <!--Right Column_2-->
+            <div class="Column_2">
+                <a href="https://github.com/mrseanmcrawford/MyProjects/tree/master/Coding%20Bootcamp/JavaScript/Basic%20JavaScript%20Projects"><img src="images/github.png"></a>
+            </div>
+            </div>
+        </div>
+        
+        <!--Contact Form-->
+            <div id="Contact">
+                <button onclick="openForm()" class="Pop_Up_Button">Contact</button>
+                <div class="form-popup" id="myForm">
+                    <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!--Here we are usimng a free online service from https://formspree.io/ to send our
+                        contact form to an email address of out choosing - note: It will not run unkless live on the internet, you have to push it to the on line website first-->
+                        <h1>Contact</h1>
+                        <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Type your name here" name="name" required>
+                        <label for="Phone"><b>Phone</b></label>
+                            <input type="text" placeholder="Type your phone number here" name="phone">
+                        <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Type your email addrss here" name="email">
+                        <label for="message"><b>Message</b></label>
+                            <input type="text" placeholder="Type your message here" name="message">
+                        <button type="submit" class="btn">SUBMIT</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                    </form>
+                </div>
+            </div>
+        <!--Footer Section-->
+        <footer>
+            <p class="center">&copy Sean Craford Consulting Inc.,</p>
+        </footer>
+        <script src="MrCrawford_Portfolio_website.js"></script>
+    </body>   
+</html>
