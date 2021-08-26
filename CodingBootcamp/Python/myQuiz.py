@@ -1,0 +1,5 @@
+
+print(Budget.calcBills())
+
+
+

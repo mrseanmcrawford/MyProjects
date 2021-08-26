@@ -55,5 +55,5 @@ def load_gui(self):
 
 
 
-    if __name__ =="__maain__":
+    if __name__ =="__main__":
         pass
