@@ -19,22 +19,26 @@ class base(Frame):
     def __init__(self, master):
         Frame.__init__(self)
         self.master.title("Website Generator App")
+
 #Entry Widget
         self.entry1 = Entry(width=25)
-        self.entry1.grid(row = 0, column= 1, columnspan= 25 )
+        self.entry1.grid(row = 0, column= 1, columnspan= 25)
 #Button Widget
-        self.button1 = Button( text = "Click Here", width = 25 )
+        self.button1 = Button(text = "Click Here", width = 25, command = self.submit)
         self.button1.grid(row = 1, column = 1, columnspan = 2)
 #Retreiving text from Entry Widget
     def submit(self):
+        f = open("myfile.html", "w")
         UserText = self.entry1.get()
-        HTMLCode = "<html><head><title>Python HTML</title></head><body>"+UserText+"</body></html>"
+        HTMLCode = "<html><head><title>Python HTML</title></head><body>{}</body></html>".format(self.entry1.get())
+        f.write(HTMLCode)
+        f.close()
+        new = 2
+        url = "myfile.html"
+        webbrowser.open(url, new = new)
         
-open("submit", "w")
+        
 
-webbrowser.open_new("seancrawford/MyProjects/CodingBootcamp/Python/GUIproject")
-    
-        
 
 if __name__ == "__main__":
     root = tk.Tk()
