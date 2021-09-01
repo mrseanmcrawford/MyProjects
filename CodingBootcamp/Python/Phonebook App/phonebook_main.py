@@ -12,8 +12,8 @@ import tkinter as tk
 
 # Be sure to import our other modules
 # so we can have access to them
-import phonebook_gui
-import phonebook_func
+import phonebook_gui.py
+import phonebook_func.py
 
 # Frame is the tkinter frame class that our own class will inherit from
 class ParentWindow(Frame):
