@@ -9,20 +9,28 @@ class ParentWindow(Frame):
 
         #Define Master Frame Configuration
         self.master = master
+        self.master.title("File Checker App")
         self.master.minsize(500,300)
         self.master.maxsize(500,300)
-        #Creation of ListBox to house files list.
-        self.LB = Listbox()
-        self.LB.insert(1,"Test", width = 25)
-        self.LB.grid(row = 0, column = 0,)
+        
+        
+        #Enrtry Widget
+        self.master.E1 = tk.Entry(self, insertbackground = "green")
+        self.master.E1.grid(row = 1, column = 2)
+        
+        #Entry Widget
+        self.master.E2 = tk.Entry(self, )
+        self.master.E2.grid(row = 2, column = 2)
 
-        #Button Widget
-        self.button1 = Button(self, text = "check for new files",)
-        self.button1.grid(row = 10, column = 5)
-        
-        
-
-        
+        #Button 1
+        self.master.b1 = Button(self, text = "test.....", fg="green", bg="azure")
+        self.master.b1.grid(row = 1, column = 0)
+        #Button 2
+        self.master.b2 = Button(self, text = "test")
+        self.master.b2.grid(row = 2, column = 0)
+        #Button 3
+        self.master.b3 = Button(self, text = "test")
+        self.master.b3.grid(row = 3, column = 0)
         
 
 if __name__ == "__main__":
